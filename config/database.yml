@@ -25,12 +25,12 @@ default: &default
 #   database: db/production.sqlite3
 
 development:
-  adapter: postgresql
-  database: my_database_development
-  pool: 5
-  timeout: 5000
-  # <<: *default
-  # database: db/development.sqlite3
+  # adapter: postgresql
+  # database: my_database_development
+  # pool: 5
+  # timeout: 5000
+  <<: *default
+  database: db/development.sqlite3
   # pool: 5
   # timeout: 5000
 
