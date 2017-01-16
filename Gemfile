@@ -29,7 +29,7 @@ gem 'pdfjs_viewer-rails'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'bundler', '~> 1.11', '>= 1.11.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
