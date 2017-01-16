@@ -1,0 +1,21 @@
+<%= stylesheet_link_tag %>
+<header>
+  <h1></h1>
+  <nav class="resume_nav">
+    <ul class="main_nav">
+      <a href="/"><li>Home</li></a>
+      <a href="#about"><li>About</li></a>
+      <li>Work</li>
+      <a href="/cv"><li>CV</li></a>
+      <li>Contact</li>
+    </ul>
+  </nav>
+</header>
+<div class="download">
+  <button type="button" name="button" class="download_btn"><%= link_to "View/Download Resume", asset_path("resume_new-rev.pdf"), :class => "links" %></button>
+</div>
+
+<div class="resume">
+  <span class="resume_img"><%= image_tag "resume_new-rev-1.jpg" %></span>
+  <span class="resume_img"><%= image_tag "resume_new-rev-1-2.jpg" %></span>
+</div>
