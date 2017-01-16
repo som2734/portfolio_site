@@ -35,7 +35,7 @@ gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'bundler', '~> 1.11', '>= 1.11.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 
 group :production do
   gem "pg"
