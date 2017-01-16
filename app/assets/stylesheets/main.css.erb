@@ -319,13 +319,15 @@ nav.show {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
-  -ms-flex-direction: column;
   display: -webkit-flex;
-  -webkit-flex-direction: column;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 70%;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-items: center;
   align-items: center;
   margin-top: 10px;
 }
@@ -342,7 +344,9 @@ nav.show {
   display: flex;
   width: 70%;
   height: auto;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 #about_img > img {
