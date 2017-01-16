@@ -1,4 +1,16 @@
-<h1 id="page_title">Contact Me</h1>
+<%= stylesheet_link_tag "main.css" %>
+<header>
+  <h1 id="page_title">Contact Me</h1>
+  <nav class="resume_nav">
+    <ul class="main_nav">
+      <a href="/"><li>Home</li></a>
+      <a href="#about"><li>About</li></a>
+      <li>Work</li>
+      <a href="/cv"><li>CV</li></a>
+      <a href="/contact"><li>Contact</li></a>
+    </ul>
+  </nav>
+</header>
 <div class="form_wrap">
   <%= form_for create_path do |f| %>
     <%= f.label :name %><br>
