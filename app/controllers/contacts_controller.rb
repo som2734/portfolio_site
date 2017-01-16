@@ -11,6 +11,7 @@ class ContactsController < ApplicationController
     ContactMailerJob.perform_later(from,subject,message)
     flash[:notice] ="Your message has been sent!"
     render 'form'
+  end
   #   @contact = Contact.new(params[:contact])
   #   @contact.request = request
   #   if @contact.deliver
