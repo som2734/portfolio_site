@@ -36,7 +36,7 @@ gem 'bundler', '~> 1.11', '>= 1.11.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'rails_12factor', group: :production
-
+gem 'puma'
 group :production do
   gem "pg"
 end
