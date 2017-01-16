@@ -13,26 +13,14 @@
 </header>
 <div class="form_wrap">
   <p><small class="flash_err"><%= flash[:notice] %></small></p>
-  <%= form_for contact_path do |f| %>
-    <%= f.label :name %><br>
-    <%= f.text_field :name, required: true%>
-
-    <br>
-
-    <%= f.label :email %><br>
-    <%= f.text_field :email, required: true%>
-
-    <br>
-
-    <%= f.label :content %><br>
-    <%= f.text_area :content, as: :text %>
-
-    <div class="hidden" style="visibility: hidden;">
-      <%= f.label :nickname %><br>
-      <%= f.text_area :nickname, hint: 'leave this field blank' %>
-    </div>
-
-    <%= f.submit 'Send Message', class:"contact_submit"%>
-
-  <% end %>
+  <form class="" action="/contact" method="post">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <label for="">Email</label>
+    <p><input type="text" name="contact[from]"></p>
+    <label for="">Subject</label>
+    <p><input type="text" name="contact[subject]"></p>
+    <label for="">Message</label>
+    <p><input type="text" name="contact[message]"></p>
+    <p><input type="submit" name="submit" value="Send Message"></p>
+  </form>
 </div>

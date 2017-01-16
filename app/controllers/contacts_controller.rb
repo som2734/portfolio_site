@@ -7,8 +7,8 @@ class ContactsController < ApplicationController
     from = params[:contact][:from]
     subject = params[:contact][:subject]
     message = params[:contact][:message]
-    # ContactMailer.send_contact(from,subject,message).deliver_now
-    ContactMailerJob.perform_later(from,subject,message)
+    ContactMailer.send_contact(from,subject,message).deliver_now
+    # ContactMailerJob.perform_later(from,subject,message)
     flash[:notice] ="Your message has been sent!"
     render 'form'
   end
