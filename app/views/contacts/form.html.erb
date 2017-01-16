@@ -12,6 +12,7 @@
   </nav>
 </header>
 <div class="form_wrap">
+  <p><small class="flash_err"><%= flash[:notice] %></small></p>
   <%= form_for contact_path do |f| %>
     <%= f.label :name %><br>
     <%= f.text_field :name, required: true%>

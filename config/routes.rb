@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   get '/cv' => 'cv#resume'
   mount PdfjsViewer::Rails::Engine => "/pdfjs", as: 'pdfjs'
   get '/pdf' => 'cv#pdf'
-  get '/contact' => 'contacts#form'
-  post '/create' => 'contacts#create'
+  get '/contact' => 'contacts#create'
+  post '/contact' => 'contacts#send_contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

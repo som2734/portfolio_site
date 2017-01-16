@@ -29,9 +29,18 @@ development:
   database: my_database_development
   pool: 5
   timeout: 5000
+  # <<: *default
+  # database: db/development.sqlite3
+  # pool: 5
+  # timeout: 5000
+
 test:
-  adapter: postgresql
-  database: my_database_test
+  # adapter: postgresql
+  # database: my_database_test
+  # pool: 5
+  # timeout: 5000
+  <<: *default
+  database: db/development.sqlite3
   pool: 5
   timeout: 5000
 
